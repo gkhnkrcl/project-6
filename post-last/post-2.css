@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
+:root {
+  --color1: #99a799;
+  --color2: #adc2a9;
+  --color3: #d3e4cd;
+  --color4: #fef5ed;
+}
+
+body {
+  background-color: var(--color1);
+}
+.up-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: var(--color3);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.left-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background-color: var(--color2);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.right-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background-color: var(--color2);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 80%;
+  height: 58%;
+  border-radius: 10px;
+
+}
+
+img{
+  position: absolute;
+  left:63%;
+  bottom: 45%;
+  background-color: var(--color3);
+  width: 42%;
+  height: 12rem;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  filter: sepia(100%);
+  z-index: 1;
+}
+
+.card {
+  height: 310px;
+}
+.card-footer {
+  border: none;
+  background-color:#ead6c5;
+ 
+}
+
+.card-body h2, .card-footer{
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.card-body h2,h3{
+  background-color: var(--color3);
+
+}
+.card-footer p  {
+  border-bottom: 2px solid blanchedalmond;
+  background-color:#ead6c5;
+
+}
+
+.animate-card{
+  display: none;
+  width: 0rem;
+  height: 0rem;
+
+}
+ .words{
+  margin-top:-2rem;
+  padding-left:1rem;
+  
+ }
+.words p{
+  display: none;
+  letter-spacing: 2px;
+  float: left;
+  padding: 5px 2px;
+  margin: 1rem 3px;
+ font-family: "Montserrat", sans-serif;
+background-color: var(--color4);
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+
+}
+
+#p1,#p8,#p15,#p22{
+
+  animation:  backInLeft;
+  animation-duration: 2s;
+ 
+}
+#p2,#p9,#p16,#p23,#p4,#p11,#p18,#p25  {
+ 
+  animation:backInDown;
+  animation-duration: 2s;
+
+}
+
+#p3,#p10,#p17,#p24,#p6,#p13,#p20,#p27 {
+ 
+  animation:flip;
+  animation-duration: 2s;
+
+}
+
+
+#p5,#p12,#p19,#p26{
+ 
+  animation:fadeInTopLeft;
+  animation-duration: 2s;
+
+}
+
+#p7,#p14,#p21 {
+ 
+  animation:fadeInBottomRight;
+  animation-duration: 2s;
+
+}
+
+
+@keyframes example {
+  0%   { left:-20px; top:0px;}
+  25%  { left:0px; top:0px;}
+  50%{height: 5rem; width:5rem ;
+  background-position: center;
+background-size:cover; }
+  75%{ border-radius: 90px;}
+ }
+
+ 
+
+
+
+
